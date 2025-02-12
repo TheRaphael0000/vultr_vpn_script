@@ -13,7 +13,7 @@ cp .env_sample .env
 vim .env
 ```
 
-- `API_KEY=` Generate an API key on, add access control if you want: https://my.vultr.com/settings/#settingsapi
+- `VULTR_API_KEY=` Generate an API key on, add access control if you want: https://my.vultr.com/settings/#settingsapi
 - `SSH_KEY_ID=` Add you public ssh key to: https://my.vultr.com/settings/#settingssshkeys, click on it, you'll see the key id in the url
 - `INSTANCE_NAME=` Any name that you don't use yet on Vultr, for example `vpn`
 

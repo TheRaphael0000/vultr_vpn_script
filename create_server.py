@@ -14,7 +14,6 @@ ssh_key_id = os.getenv("SSH_KEY_ID")
 instances = get_instance_by_name(instance_name)
 
 if(len(instances) <= 0):
-
     regions = get_regions()
 
     menu_options = [(r["id"], f"{r['city']} ({r['country']})" ) for r in regions]
