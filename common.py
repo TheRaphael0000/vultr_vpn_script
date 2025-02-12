@@ -14,3 +14,11 @@ def get_instance_by_name(name):
     instances = [i for i in instances if i["label"] == name]
     print(f"{len(instances)} instances found!")
     return instances
+
+
+def get_regions():
+    print(f"Getting regions...")
+    output = runparse(["region", "list"])
+    regions = output["regions"]
+    print(f"{len(regions)} regions found!")
+    return regions
